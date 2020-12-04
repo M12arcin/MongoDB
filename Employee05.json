@@ -1,0 +1,14 @@
+{
+    "name" : "John",
+    "last" : "Smith",
+    "age" : 41,
+    "job" : {
+                "hire_date" : "2019-04-01",
+                "title" : "Big Data Architect",
+                "skills" : ["SQL", "Java", "Python", "Linux", "Hadoop", "Spark"],
+                "certs" : ["Cloudera Professional", "Hortonworks Basics"],
+                "salary" : 9800
+            },
+    "languages" : ["English", "German"],
+    "nationality" : "USA"
+}

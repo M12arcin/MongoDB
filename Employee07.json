@@ -1,0 +1,8 @@
+{
+    "name" : "Fryderyk",
+    "last" : "Muller",
+    "age" : 26,
+    "job" : "Java Developer",
+    "languages" : ["English", "German"],
+    "school" : { "country" : "GER", "name" : "Humboldt University of Berlin", "level" : "Engineer" }
+}

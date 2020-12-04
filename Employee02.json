@@ -1,0 +1,12 @@
+{
+    "name" : "Ewa",
+    "last" : "Kowalska",
+    "age" : 30,
+    "job" : {
+                "hire_date" : "2019-02-01",
+                "title" : "Senior Tester",
+                "skills" : ["Selenium", "Java", "Python", "Unit Tests"],
+                "salary" : 8500
+            },
+    "languages" : ["English", "German"]
+}

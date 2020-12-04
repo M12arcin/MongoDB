@@ -1,0 +1,107 @@
+{
+    "name" : "Adam",
+    "last" : "Nowak",
+    "age" : 36,
+    "job" : {
+                "hire_date" : "2019-01-01",
+                "title" : "Team Lead",
+                "skills" : ["SQL", "Java", "Python", "Linux"],
+                "certs" : ["Java Associate", "Red Hat Fundamentals"],
+                "salary" : 12000
+            },
+    "languages" : ["English", "German"]
+}
+
+
+db.worker.insert({
+    "name" : "Adam",
+    "last" : "Nowak",
+    "age" : 36,
+    "job" : {
+                "hire_date" : "2019-01-01",
+                "title" : "Team Lead",
+                "skills" : ["SQL", "Java", "Python", "Linux"],
+                "certs" : ["Java Associate", "Red Hat Fundamentals"],
+                "salary" : 12000
+            },
+    "languages" : ["English", "German"]
+})
+
+
+
+db.worker.insertMany([{
+    "name" : "Ewa",
+    "last" : "Kowalska",
+    "age" : 30,
+    "job" : {
+                "hire_date" : "2019-02-01",
+                "title" : "Senior Tester",
+                "skills" : ["Selenium", "Java", "Python", "Unit Tests"],
+                "salary" : 8500
+            },
+    "languages" : ["English", "German"]},{
+    "name" : "Jakub",
+    "last" : "Prosty",
+    "age" : 32,
+    "job" : {
+                "hire_date" : "2019-02-01",
+                "title" : "Java Developer",
+                "skills" : ["SQL", "Java", "Spring", "Linux"],
+                "certs" : ["Java Associate", "Red Hat Fundamentals", "Oracle Java Basics"],
+                "salary" : 7200
+            },
+    "languages" : ["English", "German", "Spanish"]},{
+    "name" : "Agnieszka",
+    "last" : "Data",
+    "age" : 24,
+    "job" : {
+                "hire_date" : "2019-03-01",
+                "title" : "Junior Database Developer",
+                "skills" : ["SQL", "MS SQL Server", "MongoDB", "Cassandra"],
+                "salary" : 5500
+            },
+    "languages" : ["English"]},{
+    "name" : "John",
+    "last" : "Smith",
+    "age" : 41,
+    "job" : {
+                "hire_date" : "2019-04-01",
+                "title" : "Big Data Architect",
+                "skills" : ["SQL", "Java", "Python", "Linux", "Hadoop", "Spark"],
+                "certs" : ["Cloudera Professional", "Hortonworks Basics"],
+                "salary" : 9800
+            },
+    "languages" : ["English", "German"],
+    "nationality" : "USA"},{
+    "name" : "Dominik",
+    "last" : "Startowy",
+    "age" : 41,
+    "job" : "Intern",
+    "languages" : ["English"],
+    "school" : { "country" : "PL", "name" : "Lodz University of Technology", "level" : "Engineer" }},{
+    "name" : "Dominik",
+    "last" : "Startowy",
+    "age" : 41,
+    "job" : "Intern",
+    "languages" : ["English"],
+    "school" : { "country" : "PL", "name" : "Lodz University of Technology", "level" : "Engineer" }},{
+    "name" : "Fryderyk",
+    "last" : "Muller",
+    "age" : 26,
+    "job" : "Java Developer",
+    "languages" : ["English", "German"],
+    "school" : { "country" : "GER", "name" : "Humboldt University of Berlin", "level" : "Engineer" }}])
+
+db.workerfind({$and :[{"name":"Dominik"},{"languages":"English"}]})
+
+db.worker.find({"name":"Adam"}).pretty()
+
+db.worker.find({"job.hire_date" : "2019-01-01"}).pretty()
+
+db.worker.find({"job.salary":{$lt : 6000}})
+
+(type=cat AND name=MEOW) OR nr=1
+
+db.worker.find({$or : [{"job.salary" : {$lt : 6000}}, {"name" : "Fryderyk"}] })
+
+db.worker.find({ "job.salary" : {$in : [12000, 7800]}})

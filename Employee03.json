@@ -1,0 +1,13 @@
+{
+    "name" : "Jakub",
+    "last" : "Prosty",
+    "age" : 32,
+    "job" : {
+                "hire_date" : "2019-02-01",
+                "title" : "Java Developer",
+                "skills" : ["SQL", "Java", "Spring", "Linux"],
+                "certs" : ["Java Associate", "Red Hat Fundamentals", "Oracle Java Basics"],
+                "salary" : 7200
+            },
+    "languages" : ["English", "German", "Spanish"]
+}

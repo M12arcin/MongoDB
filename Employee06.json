@@ -1,0 +1,8 @@
+{
+    "name" : "Dominik",
+    "last" : "Startowy",
+    "age" : 41,
+    "job" : "Intern",
+    "languages" : ["English"],
+    "school" : { "country" : "PL", "name" : "Lodz University of Technology", "level" : "Engineer" }
+}

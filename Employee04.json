@@ -1,0 +1,12 @@
+{
+    "name" : "Agnieszka",
+    "last" : "Data",
+    "age" : 24,
+    "job" : {
+                "hire_date" : "2019-03-01",
+                "title" : "Junior Database Developer",
+                "skills" : ["SQL", "MS SQL Server", "MongoDB", "Cassandra"],
+                "salary" : 5500
+            },
+    "languages" : ["English"]
+}
